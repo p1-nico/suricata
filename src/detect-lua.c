@@ -790,7 +790,7 @@ static int DetectLuaSetupPrime(DetectEngineCtx *de_ctx, DetectLuaData *ld)
     }
 
     lua_pushliteral(luastate, "script_api_ver"); /* stack at -2 */
-    lua_pushnumber (luastate, 1); /* stack at -3 */
+    lua_pushnumber (luastate, DETECT_LUA_API_VER); /* stack at -3 */
     lua_settable(luastate, -3);
 
     if (lua_pcall(luastate, 1, 1, 0) != 0) {

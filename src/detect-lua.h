@@ -36,6 +36,8 @@ typedef struct DetectLuaThreadData {
     int alproto;
 } DetectLuaThreadData;
 
+#define DETECT_LUA_API_VER  1
+
 #define DETECT_LUAJIT_MAX_FLOWVARS  15
 #define DETECT_LUAJIT_MAX_FLOWINTS  15
 
